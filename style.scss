@@ -3,6 +3,7 @@
   --redSecondary: hsla(0, 50%, 60%, 0.7);
   --greenPrimary: hsl(154, 59%, 51%);
   --greenSecondary: hsl(154, 59%, 45%);
+  --greenHover: hsl(154, 59%, 65%);
   --blueAccent: hsl(248, 32%, 49%);
   --darkBlue: hsl(249, 10%, 26%);
   --grayishBlue: hsl(246, 25%, 77%);
@@ -101,6 +102,10 @@ a {
       font-weight: 600;
       letter-spacing: 1px;
       cursor: pointer;
+
+      &:hover {
+        background-color: var(--greenHover);
+      }
     }
   }
 
@@ -131,7 +136,7 @@ a {
     section {
       padding: 1.5em;
     }
-    
+
     h1 {
       font-size: 30px;
     }
