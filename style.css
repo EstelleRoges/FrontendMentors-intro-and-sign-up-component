@@ -1,0 +1,124 @@
+:root {
+  --redPrimary: hsl(0, 100%, 74%);
+  --redSecondary: hsla(0, 50%, 60%, 0.7);
+  --greenPrimary: hsl(154, 59%, 51%);
+  --greenSecondary: hsl(154, 59%, 45%);
+  --blueAccent: hsl(248, 32%, 49%);
+  --darkBlue: hsl(249, 10%, 26%);
+  --grayishBlue: hsl(246, 25%, 77%);
+}
+
+* {
+  font-size: 16px;
+  font-family: "Poppins", sans-serif;
+  box-sizing: border-box;
+  border-radius: 0.5em;
+}
+
+body {
+  margin: 0;
+  background: url(images/bg-intro-desktop.png) var(--redPrimary);
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  align-items: center;
+}
+
+button {
+  width: 100%;
+  margin: 1em 0;
+  text-align: center;
+  padding: 1em;
+  border: none;
+  text-align: center;
+  color: white;
+}
+
+a {
+  text-decoration: none;
+  color: white;
+  font-weight: 600;
+}
+
+#wrapper {
+  margin: 7vh auto;
+  height: calc(100vh - 10%);
+  max-width: 1340px;
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  align-items: center;
+}
+#wrapper section {
+  padding: 3em;
+}
+
+.introTitle h1 {
+  font-size: 50px;
+  color: white;
+}
+.introTitle p {
+  color: white;
+}
+
+.introForm button:first-child {
+  background-color: var(--blueAccent);
+  box-shadow: 0 7px 0 var(--redSecondary);
+}
+.introForm button:first-child span {
+  font-weight: 700;
+}
+
+.formArea {
+  background-color: white;
+  box-shadow: 0 7px 0 var(--redSecondary);
+  margin: 1em 0;
+  padding: 2em;
+}
+.formArea form input {
+  width: 100%;
+  margin: 0.5em 0;
+  padding: 1em 1.5em;
+  border: 1px solid var(--grayishBlue);
+  outline: none;
+  font-weight: 600;
+}
+.formArea form input:focus {
+  border: 1px solid var(--blueAccent);
+}
+.formArea form button {
+  background-color: var(--greenPrimary);
+  box-shadow: 0 4px var(--greenSecondary);
+  font-weight: 600;
+  letter-spacing: 1px;
+  cursor: pointer;
+}
+.formArea p {
+  margin: 0;
+  font-size: 11px;
+  text-align: center;
+  color: var(--grayishBlue);
+}
+.formArea span {
+  font-size: 11px;
+  font-weight: 600;
+  color: var(--redPrimary);
+}
+
+@media screen and (max-width: 850px) {
+  body {
+    display: block;
+    flex-direction: column;
+    text-align: center;
+  }
+
+  #wrapper {
+    flex-direction: column;
+  }
+  #wrapper section {
+    padding: 1.5em;
+  }
+  #wrapper h1 {
+    font-size: 30px;
+  }
+}/*# sourceMappingURL=style.css.map */
