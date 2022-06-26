@@ -10,6 +10,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <script src="https://kit.fontawesome.com/a789c7f6d3.js" crossorigin="anonymous"></script>
   <title>Frontend Mentor | Intro component with sign up form</title>
 </head>
 
@@ -23,14 +24,18 @@
     <section class="introForm">
       <button><span>Try it free 7 days</span> then $20/mo. thereafter</button>
       <div class="formArea">
-      <form>
-        <input type="text" name="getTrial" placeholder="First Name" id="firstName">
-        <input type="text" name="getTrial" placeholder="Last Name" id="lastName">
-        <input type="text" name="getTrial" placeholder="Email Address" id="emailAdress">
-        <input type="text" name="getTrial" placeholder="Password" id="password">
-        <button type="submit">CLAIM YOUR FREE TRIAL</button>
-      </form>
-      <p class="termsAndServices">By clicking the button, you are agreeing to our <span>Terms and Services</span></p>
+        <form id="form">
+          <input type="text" name="getTrial" placeholder="First Name" id="firstName">
+            <span class="errorMessage none"><i class="fa-solid fa-circle-exclamation"></i>First Name cannot be empty</span>
+          <input type="text" name="getTrial" placeholder="Last Name" id="lastName">
+            <span class="errorMessage none"><i class="fa-solid fa-circle-exclamation"></i>Last Name cannot be empty</span>
+          <input type="text" name="getTrial" placeholder="Email Address" id="emailAddress">
+            <span class="errorMessage none mail"><i class="fa-solid fa-circle-exclamation"></i>Looks like this is not an email</span>
+          <input type="password" name="getTrial" placeholder="Password" id="password">
+            <span class="errorMessage none"><i class="fa-solid fa-circle-exclamation"></i>Password cannot be empty</span>
+          <button type="submit" onclick="getFreeTrial(event)">CLAIM YOUR FREE TRIAL</button>
+        </form>
+        <p class="termsAndServices">By clicking the button, you are agreeing to our <span>Terms and Services</span></p>
       </div>
     </section>
   </div>
