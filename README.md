@@ -12,7 +12,6 @@ Teru-san here, thanks for having interest in my take on this challenge!
 - [My process](#my-process)
   - [Built with](#built-with)
   - [What I learned](#what-i-learned)
-  - [Continued development](#continued-development)
 - [Author](#author)
 
 ## Overview
